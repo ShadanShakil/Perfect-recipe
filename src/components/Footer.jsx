@@ -50,17 +50,17 @@ function Footer() {
             <h3 className="font-semibold text-gray-900 mb-4">Quick links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/share-recipe" className="hover:text-red-400">
+                <a href="" className="hover:text-red-400">
                   Share Recipe
                 </a>
               </li>
               <li>
-                <a href="/about-us" className="hover:text-red-400">
+                <a href="/aboutus" className="hover:text-red-400">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="/contact" className="hover:text-red-400">
+                <a href="" className="hover:text-red-400">
                   Contact
                 </a>
               </li>

@@ -271,15 +271,19 @@ function Home() {
             aperiam sit officiis eaque, nesciunt molestias sint sequi aspernatur
             expedita a cum obcaecati sed! Iusto totam ducimus sequi eius nobis?
           </p>
-          <div className="flex justify-center lg:justify-start">
-            <button
-              onClick={() => navigate("/createrecipe")}
-              type="button"
-              className="text-white bg-red-700 hover:bg-red-500 focus:outline-none font-medium rounded-full text-sm px-5 py-3 transition duration-300"
-            >
-              CREATE NEW RECIPE
-            </button>
-          </div>
+          {user.isLogin ? (
+            <div className="flex justify-center lg:justify-start">
+              <button
+                onClick={() => navigate("/createrecipe")}
+                type="button"
+                className="text-white bg-red-700 hover:bg-red-500 focus:outline-none font-medium rounded-full text-sm px-5 py-3 transition duration-300"
+              >
+                CREATE NEW RECIPE
+              </button>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
 

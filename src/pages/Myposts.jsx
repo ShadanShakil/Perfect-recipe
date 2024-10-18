@@ -25,7 +25,8 @@ export default function Myposts() {
   }, []);
 
   return (
-    <div className="flex">
+    <div className="flex flex-col">
+      <h1 className="text-5xl font-bold m-4">My Posts:</h1>
       {recipes.map((items, ind) => (
         <Card key={ind} className="py-4">
           <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
